@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+    <title>Sign Up Component</title>
+  </head>
+   <!-- Esse projeto não tem cabeçalho, por isso foi iniciado direto no main-->
+  <body>
+    <main>
+      <!-- Essa primeira section é para diferenciar as duas caixas que existem no meu main-->
+      <section class="box-one">
+        <h1 class="title">Learn to code by<br> watching others</br></h1>
+        <p class="description">
+          See how experiencied developers solve problems in real-time.<br>
+          Watching scripted tutorials is great, but understanding how<br>developers think is
+          invaluable.</br>
+        </p>
+      </section>
+        <!--Essa é a segunda section que representa a outra caixa dentro do meu main-->
+      <section class="box-two">
+        <!--Essa div foi criada pois não conseguiria mover o botão dentro do meu main sem que ele estivesse dentro dela-->
+        <div>
+          <button class="try-button"><strong>Try it free 7 days</strong>then $20/mo. thereafter</button>
+        </div>
+        <!--Esse é o meu formulário-->
+        <form id="form">
+          <div>
+            <input type="text" class="input-items" id="name" placeholder="First Name"/>
+            <small class="error-message"></small>
+          </div>
+
+          <div>
+            <input type="text" class="input-items" id="lastName" placeholder="Last Name"/>
+            <small class="error-message"></small>
+          </div>
+
+          <div>
+            <input type="email" class="input-items" id="email" placeholder="Email Adress"/>
+            <small class="error-message"></small>
+          </div>
+
+          <div>
+            <input type="password" class="input-items" id="password" placeholder="Password"/>
+            <small class="error-message"></small>
+          </div>
+
+          <div>
+            <button id="submit-button" type="submit">Claim your free trial</button>
+
+            <p class="text-info">
+              By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
+            </p>
+          </div>
+
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
